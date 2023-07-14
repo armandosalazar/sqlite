@@ -37,4 +37,7 @@ SELECT * FROM users WHERE name NOT LIKE 's%';
 SELECT * FROM users WHERE name = 'Armando' AND id = 1;
 SELECT * FROM users WHERE name = 'Armando' OR last_name = 'Salazar';
 SELECT * FROM users WHERE NOT name = 'Armando' AND NOT last_name = 'Salazar';
-
+SELECT name FROM users ORDER BY name ASC;
+SELECT name FROM users ORDER BY name DESC;
+SELECT name AS 'Nombre' FROM users ORDER BY name;
+SELECT * FROM users ORDER BY name ASC, last_name DESC;
