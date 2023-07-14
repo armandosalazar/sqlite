@@ -24,3 +24,11 @@ SELECT DISTINCT id FROM users;
 SELECT COUNT(DISTINCT id) FROM users; 
 SELECT COUNT(*) AS count FROM (SELECT DISTINCT id FROM users);
 -- WHERE
+SELECT * FROM users WHERE id = 1;
+SELECT * FROM users WHERE name = 'Armando';
+SELECT * FROM users WHERE id <= 2;
+-- !=
+SELECT * FROM users WHERE id <> 1;
+SELECT * FROM users WHERE id BETWEEN 1 AND 2;
+SELECT * FROM users WHERE name LIKE 'A%';
+
