@@ -31,4 +31,10 @@ SELECT * FROM users WHERE id <= 2;
 SELECT * FROM users WHERE id <> 1;
 SELECT * FROM users WHERE id BETWEEN 1 AND 2;
 SELECT * FROM users WHERE name LIKE 'A%';
+SELECT * FROM users WHERE name IN ('Armando', 'Luis');
+-- The WHERE clause can be combined with AND, OR, and NOT operators.
+SELECT * FROM users WHERE name NOT LIKE 's%';
+SELECT * FROM users WHERE name = 'Armando' AND id = 1;
+SELECT * FROM users WHERE name = 'Armando' OR last_name = 'Salazar';
+SELECT * FROM users WHERE NOT name = 'Armando' AND NOT last_name = 'Salazar';
 
