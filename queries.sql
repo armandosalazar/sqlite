@@ -8,7 +8,10 @@ CREATE TABLE users (
 SELECT * FROM users;
 
 INSERT INTO users (id, name, last_name, email) VALUES (1, "Armando", "Salazar", "armando@email.com");
+<<<<<<< HEAD
 INSERT INTO subjects (id, name, "level") VALUES (1, "Matemáticas discretas", 1);
+=======
+>>>>>>> d013db0... initial commit
 
 CREATE TABLE subjects (
 	id INT NOT NULL PRIMARY KEY,
@@ -16,6 +19,7 @@ CREATE TABLE subjects (
 	`level` INT NOT NULL
 );
 -- SELECTs
+<<<<<<< HEAD
 SELECT id AS identifier, last_name AS [last name] FROM users;
 SELECT id, name FROM users;
 SELECT * FROM subjects;
@@ -41,3 +45,6 @@ SELECT name FROM users ORDER BY name ASC;
 SELECT name FROM users ORDER BY name DESC;
 SELECT name AS 'Nombre' FROM users ORDER BY name;
 SELECT * FROM users ORDER BY name ASC, last_name DESC;
+=======
+SELECT id AS identifier, last_name AS [last name] FROM users;
+>>>>>>> d013db0... initial commit
