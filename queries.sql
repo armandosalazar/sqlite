@@ -16,3 +16,4 @@ CREATE TABLE subjects (
 );
 -- SELECTs
 SELECT id AS identifier, last_name AS [last name] FROM users;
+SELECT id, name FROM users;
