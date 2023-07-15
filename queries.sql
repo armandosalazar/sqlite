@@ -9,7 +9,7 @@ SELECT * FROM users;
 
 INSERT INTO users (id, name, last_name, email) VALUES (1, "Armando", "Salazar", "armando@email.com");
 INSERT INTO subjects (id, name, "level") VALUES (1, "Matemáticas discretas", 1);
-
+INSERT INTO subjects (id, name, "level") VALUES (2, 'Desarrollo Web I', 1);
 CREATE TABLE subjects (
 	id INT NOT NULL PRIMARY KEY,
 	name VARCHAR(255) NOT NULL,
