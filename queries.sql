@@ -10,6 +10,7 @@ SELECT * FROM users;
 INSERT INTO users (id, name, last_name, email) VALUES (1, "Armando", "Salazar", "armando@email.com");
 INSERT INTO subjects (id, name, "level") VALUES (1, "Matemáticas discretas", 1);
 INSERT INTO subjects (id, name, "level") VALUES (2, 'Desarrollo Web I', 1);
+-- create table subjects
 CREATE TABLE subjects (
 	id INT NOT NULL PRIMARY KEY,
 	name VARCHAR(255) NOT NULL,
@@ -37,7 +38,11 @@ SELECT * FROM users WHERE name NOT LIKE 's%';
 SELECT * FROM users WHERE name = 'Armando' AND id = 1;
 SELECT * FROM users WHERE name = 'Armando' OR last_name = 'Salazar';
 SELECT * FROM users WHERE NOT name = 'Armando' AND NOT last_name = 'Salazar';
+-- ORDER By
 SELECT name FROM users ORDER BY name ASC;
 SELECT name FROM users ORDER BY name DESC;
 SELECT name AS 'Nombre' FROM users ORDER BY name;
 SELECT * FROM users ORDER BY name ASC, last_name DESC;
+-- UPDATE 
+UPDATE users SET name = 'Armando' WHERE name = 'Armando';
+
